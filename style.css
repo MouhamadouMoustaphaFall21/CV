@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.tete {
+    background-color: rgb(7, 7, 54);
+    padding: 15px;
+    min-height: auto;
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.droite {
+    width: 40%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding-left: 0; 
+}
+
+.tete .droite .photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid rgb(244, 247, 250);
+}
+.prenom {
+    width: 60%;
+    display: flex;
+    flex-direction: column; /* Ajouté pour empiler les enfants verticalement */
+    justify-content: center; /* Centre verticalement le contenu */
+    padding: 0 auto;
+    margin-bottom: 150px;
+}
+
+.tete .prenom h1 {
+    color: rgb(239, 243, 247);
+    font-weight: 700;
+    font-family: algerian;
+    text-shadow: rgba(4, 77, 146, 0.329) 10px 7px 7px;
+    font-size: 3rem; 
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.tete .prenom h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: whitesmoke;
+    white-space: nowrap;
+    text-align: center; 
+    margin-right: 300px;
+}
+.trait {
+width: 70%;
+height: 2px;
+background-color: white; 
+border: none;
+margin-top: 50px;
+}
+.infos-perso{padding-right: 40px;}
+.reseaux{
+    margin:10px 300px;
+    gap:30px;
+    display: flex;
+}
+.reseaux a {
+    color: rgb(251, 252, 253);
+    font-size: 2em;
+    transition: transform 0.3s ease;
+    padding-top: 40px;
+}
+.reseaux .link:hover {
+    color: rgb(12, 122, 247);
+    transform: scale(1.4);
+}
+.reseaux .ig:hover {
+    color: rgb(236, 47, 13);
+    transform: scale(1.4);
+}
+.reseaux .git:hover {
+    color: rgba(53, 51, 51, 0.685);
+    transform: scale(1.4);
+}
+section {
+    padding: 30px 40px;
+    border-bottom: 2px solid #9e9c9c;
+}
+h3 {
+    color: rgb(7, 7, 54);
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(15, 131, 199);
+    display: inline-block;
+}
+ ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 20px; 
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+ul li:hover {
+    background-color: #f5f5f5;
+    transform: translateX(5px);
+}
+
+ul li i {
+    font-size: 1.5rem; 
+    margin-right: 15px; 
+    width: 30px;
+    text-align: center;
+}
+
+.fa-location-dot { color: #e74c3c; }
+.fa-calendar-days { color: #3498db; }
+.fa-phone { color: #2ecc71; }
+.fa-envelope { color: #9b59b6; }
+.fa-flag { color: #f39c12; }
+
+.a-propos p {
+     color: #181717;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.languages, .interests {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 50px;
+}
+.contenue-langages, .langue{
+    background: rgba(139, 161, 172, 0.952);
+    padding: 10px 15px;
+    display: inline-block;
+}
+.timeline-item {
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background:rgb(15, 131, 199);;
+        }
+
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 20px;
+            width: 2px;
+            height: calc(100% - 10px);
+            background: rgb(15, 131, 199);;
+        }
+
+        .timeline-item:last-child:after {
+            display: none;
+        }
+
+        .timeline-date {
+            color:rgb(15, 131, 199);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .timeline-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .timeline-subtitle {
+            color: var(--light-text);
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+.Competences .grille {
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3rem;
+}
+.Competences .case{
+    background-color:#a7a6a6;
+
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.5s ease;
+    
+}
+.Competences .case:hover{
+    transform: translateY(-15px);
+}
+.Competences .niveau{
+    background-color: #fffcfc;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+.Competences .niveau div{
+    background-color:rgb(7, 7, 54);
+    border-radius: 5px;
+    height: 100%;
+}
+.languages, .interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.language-item, .interest-item {
+    background: rgba(139, 161, 172, 0.952);
+    padding: 10px 15px;
+    display: inline-block;
+}
+footer {
+    background:  rgb(7, 7, 54);;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+    @media (max-width: 768px) {
+    .tete {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 10px;
+    }
+
+    .tete .droite {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .tete .droite .photo {
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        border: 3px solid rgb(244, 247, 250);
+        object-fit: cover;
+    }
+
+    .tete .prenom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    /* === Attention : mêmes sélecteurs que dans ton code principal === */
+    .tete .prenom h1 {
+        color: rgb(239, 243, 247);
+        font-family: algerian;
+        font-weight: 700;
+        font-size: 1.1rem !important; /* le !important force la priorité */
+        margin-bottom: 10px;
+        text-align: center;
+        white-space: normal; /* pour que le texte aille à la ligne */
+    }
+
+    .tete .prenom h2 {
+        font-size: 0.9rem !important;
+        font-weight: 600;
+        color: whitesmoke;
+        text-align: center;
+        margin: 5px 0 15px 0;
+        white-space: normal;
+    }
+
+    .trait {
+        width: 50%;
+        height: 2px;
+        background-color: white;
+        border: none;
+        margin: 10px auto;
+    }
+
+    .reseaux {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin: 0 auto;
+    }
+
+    .reseaux a {
+        color: white;
+        font-size: 1.8rem;
+        transition: transform 0.3s ease;
+    }
+
+    .reseaux a:hover {
+        transform: scale(1.3);
+    }
+    .languages, .interests {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
+}
+    .Competences .grille {
+    display: grid;
+    padding-top: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+}
+}
